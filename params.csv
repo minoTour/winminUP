@@ -1,4 +1,4 @@
-Omit,Group,Short,Long,Short_Desc,Store,Type,Target,Required,Default,Options,Details
+?pre,Group,Short,Long,Short_Desc,Store,Type,Target,Required,Default,Options,Details
 0,0._Folders,w,watchdir,Watch_Directory,,dir,watchdir,TRUE,None,,The path to the folder containing the downloads directory with fast5 reads to analyse  e.g. C:\data\minion\downloads (for windows.
 1,0._Folders,m,minuppath,minUP.exe Folder,,dir,minup,TRUE,dist\dist,,The path to the folder containing the minUP.exe command line executable application.
 0,1._Login_Details,u,minotourusername,minoTour_Username,store,str,minotourusername,TRUE,None,,The MinoTour username with permissions to upload data.
@@ -38,4 +38,7 @@ Omit,Group,Short,Long,Short_Desc,Store,Type,Target,Required,Default,Options,Deta
 ,,,,,,,,,,,
 0,6._Processor_Options,procs,proc_num,Number_of_Processors,,int,procs,FALSE,-1,,The number of processors to run minUP on.
 0,6._Processor_Options,n,aligningthreads,Number_of_Threads,,str,threads,FALSE,3,,The number of threads to use for aligning.
-0,6._Processor_Options,pre,insertpretrue,Use_Pre-Basecalled_Reads?,store_true,bool,preproc,FALSE,FALSE,,Process and align raw reads prior to basecalling by metrichor.
+0,6._Processor_Options,pre,insertpretrue,Process_Pre-Basecalled_Reads?,store_true,bool,preproc,FALSE,FALSE,,Process  raw reads prior to basecalling by metrichor.
+0,6._Processor_Options,prealign,alignpretrue,Align_Pre-Basecalled_Reads?,store_true,bool,preall,FALSE,FALSE,,Align raw reads prior to basecalling by metrichor.
+0,6._Processor_Options,customup,custom-upload,Stop minUP when cached has remained zero for more than 30 seconds,store_true,bool,customup,FALSE,FALSE,,Stop minUP when cached has remained zero for more than 30 seconds.
+1,6._Processor_Options,qScale,scale-query,Scale query by max value in ref.,store_true,bool,qScale,FALSE,FALSE,,Scale query by max value in ref.Scale query by max value in ref.
