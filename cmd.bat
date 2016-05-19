@@ -1,0 +1,1 @@
+c:\Python27\python.exe minUP.py -bwa  -cs 2016-05-13_17:06:52 -d -dbh localhost -dbp 3306 -dbu Mike1 -f "C:\DeepSEQ_WIP\referenceGenomes\Zika_Africa.fasta" -n 4 -name R9_test -o minionowner -procs 4 -pw 1234 -r 0 -u Mike1 -useHdfTimes -v -w "C:\DeepSEQ_WIP\reads\Zika_R9"
